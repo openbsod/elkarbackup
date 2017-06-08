@@ -1,0 +1,89 @@
+   364  13:23   cd /usr/ports/lang/php56
+   365  13:23   make
+   367  13:25   make install
+   368  13:25   make clean
+   375  13:33   cd /usr/ports/converters/libiconv
+   376  13:33   make deinstall
+   377  13:33   make reinstall
+   389  13:43   whereis nginx
+   390  13:43   cd /usr/ports/www/nginx
+   392  13:43   make
+   394  13:45   make install
+   443  14:44   cd /usr/ports/shells/bash
+   444  14:44   make
+   445  14:45   make install
+   446  14:45   vi /etc/fstab
+   447  14:46   fdesc/dev/fdfdescfsrw00
+   448  14:46   mount -t fdescfs fdesc /dev/fd
+   547  16:19   whereis composer
+   548  16:19   whereis symphony
+   549  16:20   cd /usr/ports/devel/pear
+   550  16:20   make
+   551  16:20   make install
+   552  16:20   make clean
+   553  16:21   pear channel-discover pear.symfony-project.com
+   555  16:22   pear install symfony/symfony-1.4.20
+   556  16:22   /usr/local/etc/rc.d/php-fpm stop
+   557  16:22   /usr/local/etc/rc.d/php-fpm start
+   562  16:25   cd /usr/ports/devel/php-composer/
+   563  16:25   make
+   564  16:26   make install
+   565  16:26   make clean
+   668	15:35	ls -l /usr/bin/rsync
+   669	15:35	ln -s /usr/local/bin/rsync /usr/bin/rsync
+   672	15:36	whereis rsnapshot
+   673	15:36	cd /usr/ports/sysutils/rsnapshot
+   674	15:36	make config
+   675	15:36	make config-recursive
+   676	15:36	make config-recursive
+   678	15:36	make install clean
+   696	15:54	whereis head
+   697	15:55	echo /usr/ports/*/*head*
+   698	15:57	cd /usr/ports/sysutils/coreutils/
+   699	15:57	make config
+   700	15:57	make config-recursive
+   701	15:57	make config-recursive
+   702	15:57	make install clean
+   711	16:00	ln -s /usr/local/bin/ghead /usr/bin/head
+   726	16:05	php /usr/share/elkarbackup/web/app.php
+   727	16:05	tail /var/log/nginx-error.log
+   728	16:06	php /usr/share/elkarbackup/web/app.php?login
+   729	16:06	echo /usr/share/elkarbackup/web/app.php?login | php-fpm
+   730	16:07	echo /usr/share/elkarbackup/web/app.php?login | /usr/local/sbin/php-fpm
+   731	16:07	ln -s /usr/local/bin/rsnapshot /usr/bin/rsnapshot
+   735	16:11	php /usr/share/elkarbackup/app/console cache:clear
+   736	16:11	ls -l /usr/share/elkarbackup/app/cache/prod/annotations
+   737	16:11	ls -l /usr/share/elkarbackup/app/cache/prod/
+   738	16:11	ls -l /usr/share/elkarbackup/app/cache/
+   744	16:15	grep -r GET /usr/share/elkarbackup/app
+   746	16:16	php /usr/share/elkarbackup/app/check.php
+   750	16:19	date
+   758	16:24	ls -l /var/spool/elkarbackup/backups
+   759	16:29	grep -r CSPRNG /usr/share/elkarbackup
+   760	16:30	php /usr/share/elkarbackup/vendor/paragonie/random_compat/lib/random.php
+   761	16:30	vi /usr/share/elkarbackup/vendor/paragonie/random_compat/lib/random.php
+   764	16:31	vi /usr/share/elkarbackup/vendor/paragonie/random_compat/README.md
+   766	16:32	vi /usr/share/elkarbackup/vendor/paragonie/random_compat/lib/random.php
+   767	16:33	php -m
+   768	16:33	locate php56-crypt
+   769	16:33	pear install crypt
+   770	16:33	cd /usr/ports/lang/php56
+   771	16:34	make config
+   772	16:34	cd /usr/ports/lang/php56-extensions/
+   773	16:34	make config
+   774	16:35	vi /usr/share/elkarbackup/vendor/paragonie/random_compat/lib/random.php
+   775	16:36	whereis libsodium
+   776	16:36	cd /usr/ports/security/libsodium
+   777	16:37	make config
+   778	16:37	make config-recursive
+   779	16:37	make install clean
+   780	16:37	tail -f /usr/share/elkarbackup/app/logs/prod.log
+   781	16:37	vi /usr/share/elkarbackup/vendor/paragonie/random_compat/lib/random.php
+   782	16:38	cd /usr/ports/lang/php56-extensions/
+   783	16:38	make config
+   784	16:38	pear install libsodium
+   786	16:38	pecl install libsodium
+   787	16:39	vi /usr/local/etc/php/extensions.ini
+   788	16:39	php -m
+   789	16:39	/usr/local/etc/rc.d/nginx reload
+   790	16:39	/usr/local/etc/rc.d/php-fpm restart
