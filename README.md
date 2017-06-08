@@ -24,6 +24,12 @@ Please install this ports: bash, rsync, sudo, rsnapshot, apache24 ( or nginx), m
 	mysql -uroot -pyourpassword
 	create database elkarbackup;
 	GRANT ALL ON elkarbackup.* TO elkarbackup IDENTIFIED BY '*855470E4B85750FF5357A8E16EBC1AB933E974C9';
+
+	or you may restore from dump:
+
+	mysql -uroot -pyourpassword elkarbackup < elkarbackup.sql
+	
+	https://github.com/openbsod/elkarbackup/blob/master/elkarbackup.sql
 ```
 5. After creating the elkarbackup database in mysql you need to perform this part of the scripts:
 ```
