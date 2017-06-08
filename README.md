@@ -29,6 +29,9 @@ Please install this ports: bash, rsync, sudo, rsnapshot, apache24 ( or nginx), m
 
   rm -rf /var/lib/elkarbackup/sessions/*
 
+5. Install Nginx as usual with pkg or ports. You may use nginx.conf file from this repository
+  https://github.com/openbsod/elkarbackup/blob/master/nginx.conf
+
 
 ## Develop
 
