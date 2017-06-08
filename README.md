@@ -1,9 +1,8 @@
 # Elkarbackup
 
 ## What is it?
-ElkarBackup is a free open-source backup solution based on RSync/RSnapshot
+Here is a FreeBSD fork of ElkarBackup, free open-source backup solution based on RSync/RSnapshot
 
-<img src="http://elkarbackup.org/images/screenshots/eb-login.png" />
 <img src="http://elkarbackup.org/images/screenshots/eb-jobs.png" />
 
 ## Features
