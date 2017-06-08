@@ -19,18 +19,20 @@ Please install this ports: bash, rsync, sudo, rsnapshot, apache24 ( or nginx), m
  
 4. After creating the elkarbackup database in mysql (elkarbackup database, elkarbackup user and password elkarbackup) you will need to perform this part of the scripts:
 
-  php /usr/share/elkarbackup/app/console doctrine:migrations:migrate --no-interaction
+	php /usr/share/elkarbackup/app/console doctrine:migrations:migrate --no-interaction
 
-  php /usr/share/elkarbackup/app/console elkarbackup:create_admin
+	php /usr/share/elkarbackup/app/console elkarbackup:create_admin
 
-  php /usr/share/elkarbackup/app/console cache:clear
+	php /usr/share/elkarbackup/app/console cache:clear
 
-  php /usr/share/elkarbackup/app/console assetic:dump
+	php /usr/share/elkarbackup/app/console assetic:dump
 
-  rm -rf /var/lib/elkarbackup/sessions/*
+	rm -rf /var/lib/elkarbackup/sessions/*
 
 5. Install Nginx as usual with pkg or ports. You may use nginx.conf file from this repository
-  https://github.com/openbsod/elkarbackup/blob/master/nginx.conf
+   https://github.com/openbsod/elkarbackup/blob/master/nginx.conf
+
+6. Or use Apache with conf placed at /usr/local/etc/apache24/Includes/elkarbackup.conf
 
 
 ## Develop
