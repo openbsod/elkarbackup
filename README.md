@@ -16,8 +16,16 @@ Please install this ports: bash, rsync, sudo, rsnapshot, apache24 ( or nginx), m
 2. In the linux host check all the folders and files installed by elkarbackup package and copy exactly in the same locations within the FreeBSD.
  
 3. Create the elkarbackup user with the same user properties of linux server, but use bash as user shell ( important to run the cron job )
- 
-4. After creating the elkarbackup database in mysql (elkarbackup database, elkarbackup user and password elkarbackup) you will need to perform this part of the scripts:
+   Use /var/lib/elkarbackup as elkarbackup user home directory
+
+4. Create MySQL user elkarbackup with password elkarbackup and database for elkarbackup:
+
+```
+	mysql -uroot -pyourpassword
+	create database elkarbackup;
+	GRANT ALL ON elkarbackup.* TO elkarbackup IDENTIFIED BY '*855470E4B85750FF5357A8E16EBC1AB933E974C9';
+```
+5. After creating the elkarbackup database in mysql you need to perform this part of the scripts:
 ```
 	php /usr/share/elkarbackup/app/console doctrine:migrations:migrate --no-interaction
 
@@ -29,14 +37,12 @@ Please install this ports: bash, rsync, sudo, rsnapshot, apache24 ( or nginx), m
 
 	rm -rf /var/lib/elkarbackup/sessions/*
 ```
-5. Install Nginx as usual with pkg or ports. You may use nginx.conf file from this repository
+6. Install Nginx as usual with pkg or ports. You may use nginx.conf file from this repository
    https://github.com/openbsod/elkarbackup/blob/master/nginx.conf
 
-6. Or use Apache with conf placed at /usr/local/etc/apache24/Includes/elkarbackup.conf
+7. Or use Apache with conf placed at /usr/local/etc/apache24/Includes/elkarbackup.conf
    https://github.com/openbsod/elkarbackup/blob/master/elkarbackup.conf
-
 
 ## Develop
 
 Elkarbackup is free open source software. Download the source code, make your changes and [create your own Debian package](https://github.com/elkarbackup/elkarbackup/wiki/BuildPackage)
-
