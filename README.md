@@ -37,10 +37,15 @@ Please install this ports: bash, rsync, sudo, rsnapshot, apache24 ( or nginx), m
 
 	rm -rf /var/lib/elkarbackup/sessions/*
 ```
-6. Install Nginx as usual with pkg or ports. You may use nginx.conf file from this repository
+7. Create cron job
+```
+	### elkarbackup
+	*       *        *       *       *      elkarbackup     /usr/local/bin/php /usr/share/elkarbackup/app/console elkarbackup:tick
+```
+8. Install Nginx as usual with pkg or ports. You may use nginx.conf file from this repository
    https://github.com/openbsod/elkarbackup/blob/master/nginx.conf
 
-7. Or use Apache with conf placed at /usr/local/etc/apache24/Includes/elkarbackup.conf
+9. Or use Apache with conf placed at /usr/local/etc/apache24/Includes/elkarbackup.conf
    https://github.com/openbsod/elkarbackup/blob/master/elkarbackup.conf
 
 ## Develop
