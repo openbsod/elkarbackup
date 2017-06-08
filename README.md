@@ -9,7 +9,7 @@ Credits https://groups.google.com/d/msg/elkarbackup-users/M2sozDgFboM/gAnqumq_jb
 
 Tuning:
 
-Please install this ports: bash, rsync, sudo, rsnapshot, apache24 ( or nginx), mod_php5, php5_extensions, php5_fileinfo and mysql.
+Please install this ports: bash, rsync, sudo, rsnapshot, apache24 ( or nginx), mod_php5, php5_extensions, php5_fileinfo and mysql. Probably you will need composer, symphony, pecl, php pear, libsodium.. added shell_history https://github.com/openbsod/elkarbackup/blob/master/shell_history as a short reminder.
 
 1. First of all you may want to install elkarbackup on a server with linux, it will bu used as a model for installation
  
