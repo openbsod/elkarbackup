@@ -29,6 +29,44 @@
    563  16:25   make
    564  16:26   make install
    565  16:26   make clean
+   627  13:46   composer update
+   628  13:48   cd ../
+   629  13:48   ls
+   630  13:48   composer update
+   631  13:48   composer update symphony/symphony
+   632  13:49   ls web/
+   633  13:49   ls
+   634  13:49   ls src/
+   635  13:49   ls app/
+   636  13:50   cd vendor/
+   637  13:50   php autoload.php
+   638  13:50   vi autoload.php
+   639  13:51   ls
+   640  13:51   php ./composer/autoload_real.php
+   641  13:51   cat ./composer/autoload_real.php
+   642  13:52   composer.phar
+   643  13:52   composer.phar install
+   644  13:52   find /usr/share/elkarbackup -name composer.lock
+   645  13:53   ls /usr/src/
+   646  13:53   ls ../src/Binovo/
+   647  13:54   ls
+   648  13:54   ls symfony/
+   649  13:54   ls symfony/symfony/
+   650  13:55   composer.phar update symfony/symfony
+   651  13:55   composer update symfony/symfony
+   652  13:55   cd symfony/symfony/
+   653  13:55   composer update
+   654  13:55   curl https://packagist.org/packages.json
+   655  13:56   curl http://packagist.org/packages.json
+   656  13:56   vi /etc/ipfw.rules
+   657  13:56   /etc/rc.d/ipfw restart
+   658  13:56   composer update
+   659  13:57   vi /usr/local/etc/php.ini
+   660  13:58   composer update
+   661  13:58   vi /usr/local/etc/php.ini
+   662  13:59   php -i | grep memo
+   663  14:00   php -d memory_limit
+   664  14:02   vi /usr/local/bin/composer.phar/src/Composer/DependencyResolver/RuleSetGenerator.php
    668	15:35	ls -l /usr/bin/rsync
    669	15:35	ln -s /usr/local/bin/rsync /usr/bin/rsync
    672	15:36	whereis rsnapshot
